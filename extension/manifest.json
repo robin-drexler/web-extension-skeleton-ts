@@ -1,0 +1,13 @@
+{
+  "name": "Amazing Extension",
+  "version": "0.0.1",
+  "icons": {
+    "128": "images/icon_128.png"
+  },
+  "description": "Does amazing things",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["/dist/background/background.js"]
+  },
+  "manifest_version": 2
+}
