@@ -1,13 +1,22 @@
 {
-  "name": "Amazing Extension",
+  "name": "Extension",
   "version": "0.0.1",
   "icons": {
     "128": "images/icon_128.png"
   },
   "description": "Does amazing things",
-  "permissions": ["tabs"],
   "background": {
     "scripts": ["/dist/background/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./dist/content/content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Extension",
+    "default_popup": "/dist/popup/popup.html"
   },
   "manifest_version": 2
 }
