@@ -6,7 +6,7 @@
     "web-ext": "4.2.0"
   },
   "dependencies": {
-    "webextension-polyfill-ts": "0.16.0"
+    "webextension-polyfill-ts": "0.26.0"
   },
   "scripts": {
     "watch": "npm-run-all -p 'watch:*'",
